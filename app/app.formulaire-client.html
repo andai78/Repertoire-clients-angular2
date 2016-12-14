@@ -1,0 +1,26 @@
+<!-- Formulaire - ajouter Clients -->
+<div class="row">
+ 
+  <div class="col-md-6  well">
+
+    <p><label>Ajouter Client :</label></p>
+    
+    <form> 
+      <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="firstname" name="firstname" placeholder="firstname" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="lastname" name="lastname" placeholder="lastname" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="email" name="email" placeholder="email" required>
+      </div>
+    
+      <button type="submit" class="btn btn-default pull-right" (click)="addClient(firstname,lastname,email)">Sauvegarder</button>
+    </form>
+
+ </div>
+</div><!-- row -->
+<br>

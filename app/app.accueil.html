@@ -1,0 +1,20 @@
+<!-- Liste Clients -->
+
+	<div class="row">
+
+		<div class="col-md-6">
+
+      <hr>
+
+    	<p><label>Liste Clients</label></p>
+			
+			<table class="table table-bordered">	
+				<tr *ngFor="let c of clients">	
+					<td>{{c.firstname}}</td>
+					<td>{{c.lastname}}</td>
+					<td>{{c.email}}</td>
+				</tr>  
+			</table>
+
+		</div>
+	</div><!-- row -->
